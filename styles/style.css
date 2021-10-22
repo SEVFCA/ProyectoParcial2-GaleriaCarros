@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body {
+    background: black;
+    font-family: 'Scheherazade New', serif;
+    font-size: 25px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Inicio Styles */
+
+body #Inicio{
+  display: flex;
+  position: fixed;
+  background: #000000;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+
+
+body #Inicio .btnEnter{
+  top: 53%;
+  /* border: 10px solid #c0392b; */
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/64/16/1023/background-gold-texture-picture-wallpaper-preview.jpg);
+  width: 15vw;
+  height: 6vh;
+  margin: 2vw;
+  border-radius: 15px;
+  padding:12px;
+  color: white; 
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  transition: all 0.2s ease-in-out;
+}
+
+body #Inicio .btnEnter:hover{
+  width: 16vw;
+  height: 7vh;
+  color: #BD850D;
+  background: white;
+  
+}
+
+body #Inicio .btnNombres{
+  bottom: 98%;
+  right: 57%;
+  font-size: 20px;
+  background: white;
+  width: 20vw;
+  height: 16vh;
+  margin: 2vw;
+  border-radius: 15px;
+  padding:12px;
+  color: black; 
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  opacity: 50%;
+  
+
+}
+
+body #Inicio .btnNombres:hover{
+  width: 20vw;
+  right: 45%;
+  opacity: 100%;
+  
+}
+
+body .BackGround{
+  width: 100%;
+  height: 100%;
+}
+
+body .Car1{
+  width: 24.3%;
+  height: 100%;
+  opacity: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+  
+}
+
+body .Car2{
+  width: 24.3%;
+  height: 100%;
+  opacity: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+  
+}
+body .Car3{
+  width: 24.3%;
+  height: 100%;
+  opacity: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+  
+}
+body .Car4{
+  width: 24.3%;
+  height: 100%;
+  opacity: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+  
+}
+
+body .Car1:hover{
+  opacity: 100%;
+  width: 27%;
+}
+
+body .Car2:hover{
+  opacity: 100%;
+  width: 27%;
+}
+
+body .Car3:hover{
+  opacity: 100%;
+  width: 27%;
+}
+
+body .Car4:hover{
+  opacity: 100%;
+  width: 27%;
+  
+}
+
+.Logo{
+  position: absolute;
+  width: 9vw;
+  bottom: 45%;
+
+}
+
+/* Pagina 2 Styles */
+
+
+
+body #contentModels {
+  display: flex;
+  position: fixed;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  z-index: 2;
+  width: 20vw;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2015/10/01/21/57/wallpaper-967836_960_720.png);
+}
+
+body #contentModels .img1{
+  width: 130%;
+  height: 130%;
+  opacity: 80%;
+}
+
+body #contentModels .img2{
+  width: 160%;
+  height: 160%;
+  opacity: 80%;
+}
+
+body #contentModels .img3{
+  width: 160%;
+  height: 160%;
+  opacity: 80%;
+}
+
+body #contentModels .img4{
+  width: 130%;
+  height: 130%;
+  opacity: 80%;
+}
+
+body #contentModels .img1:hover{
+  opacity: 100%;
+}
+
+body #contentModels .img2:hover{
+  opacity: 100%;
+}
+
+body #contentModels .img3:hover{
+  opacity: 100%;
+}
+
+body #Pagina2 #contentModels .img4:hover{
+  opacity: 100%;
+}
+
+
+
+body #contentModels .btnOptionModels {
+
+  /* border: 10px solid #9c9c99; */
+  width: 13vw;
+  height: 20vh;
+  margin: 1vw;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.27s ease-in-out;
+}
+
+body #contentModels .btnOptionModels:hover {
+  width: 15vw;
+  height: 21vh;
+  /* border: 4px solid #dadad8; */
+  
+}
+
+/*       BOTON RETURN      */
+
+body #contentModels #backBtn{
+  bottom: 100%;
+  position: flex;
+  border-radius: 15px;
+  padding:5px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/64/16/1023/background-gold-texture-picture-wallpaper-preview.jpg);
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+body #contentModels #backBtn:hover{
+  letter-spacing: 1px;
+  background:white;
+  color: #BD850D;
+}
+
+body #contentTexture {
+  display: flex;
+  position: fixed;
+  background: #ffffff00;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  z-index: 2;
+  width: 80vw;
+  height: 10vh;
+}
+
+body #contentTexture .btnOptionTexture {
+  bottom:20%;
+  border: 10px solid #27241f;
+  width: 15.7vw;
+  height: 9.7vh;
+  margin: 2vw;
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  /* background:black; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.texture1{
+ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLb6RRbE0O_WP-_JctT12ngGPaGNt-VgdJQ&usqp=CAU);
+}
+.texture2{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/178/945/non_2x/rose-gold-brushed-metal-texture-vector.jpg);
+}
+.texture3{
+  background-image: url(https://besthqwallpapers.com/Uploads/13-8-2020/139554/thumb2-golden-textures-4k-polished-metal-plate-metal-textures-golden-metal-background.jpg);
+}
+
+body #contentTexture .btnOptionTexture:hover {
+  width: 17vw;
+  height: 10vh;
+}
+
+
+
+/* .custom {
+  background: #ffffff;
+} */

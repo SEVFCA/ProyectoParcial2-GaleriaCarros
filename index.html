@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcial 2 - Galeria de Carros</title>
+  <script type="module" src="./src/app.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+
+
+<body>
+  <div id=Pagina2>
+
+  <div id="contentModels">
+    <div id="backBtn">R E T U R N</div>
+    <div class="btnOptionModels custom modelOne" data-size="modelOne">
+      <img src="assets/imgmodel1.png" class="img1">
+      <div class="title"></div>
+    </div>
+    <div class="btnOptionModels custom modelTwo" data-size="modelTwo">
+      <img src="assets/imgmodel2.png" class="img2">
+      <div class="title"></div>
+    </div>
+    <div class="btnOptionModels custom modelThree" data-size="modelThree">
+      <img src="assets/imgmodel3.png" class="img3">
+      <div class="title"></div>
+    </div>
+    <div class="btnOptionModels custom" data-size="modelFour">
+      <img src="assets/imgmodel4.png" class="img4">
+      <div class="title"></div>
+    </div>
+  </div>
+  <div id="contentTexture">
+    <div class="btnOptionTexture custom texture1" data-size="text1">
+     <!--  <img src="assets/texture1.jpg" class="texture1"> -->
+      <div class="title"></div>
+    </div>
+    <div class="btnOptionTexture custom texture2" data-size="text2">
+    <!--   <img src="assets/texture2.jpg" class="texture2"> -->
+      <div class="title"></div>
+    </div>
+    <div class="btnOptionTexture custom texture3" data-size="text3">
+     <!--  <img src="assets/texture3.jpg" class="texture3"> -->
+      <div class="title"></div>
+    </div>
+  </div>
+</div>
+<div id = "Inicio">
+
+  <img src="assets/imgCar1.jpg" class="Car1">
+  <img src="assets/imgCar2.jpg" class="Car2">
+  <img src="assets/imgCar3 (2).jpg" class="Car3">
+  <img src="assets/imgCar4.jpg" class="Car4">
+  <img src="assets/Logo.png" class="Logo">
+
+  <div class="btnEnter">
+    <div class="title">Mercedes-Benz Modelos</div> 
+  </div>
+
+  <div class="btnNombres">
+    <div class="title">Santiago Varela 63421<br>Valentina Gonzalez 63503</div> 
+  </div>  
+</div>
+
+  <script type="module">
+    
+    import { main, changeModel, reset, changeTexture } from './src/app.js';
+
+    
+
+    const btnModelOne = document.querySelector('.modelOne');
+    const btnModelTwo = document.querySelector('.modelTwo');
+    const entrada = document.querySelectorAll('.btnEnter');
+    const backBtn = document.querySelector('#backBtn');
+  
+
+    //FUNCION DE CARGAR MODELO UNIVERSAL
+    const btnModel = document.querySelectorAll('.btnOptionModels');
+
+    let modelo;
+
+    btnModel.forEach(btnModelSelected =>{
+      btnModelSelected.onclick=function(){
+        const optModel = this.dataset.size;
+        modelo = optModel;
+        changeModel(modelo);
+      }
+    });
+
+      entrada.forEach(entradaSelected => {
+        entradaSelected.onclick = function(){
+          tooglecontent();
+          main();
+        }
+      });
+
+      //Funcion Cargar textura de forma universal
+      const btnTexture = document.querySelectorAll('.btnOptionTexture');
+
+      let textura;
+
+      btnTexture.forEach(btnTextureSelected =>{
+      btnTextureSelected.onclick = function(){
+      const optTexture = this.dataset.size; 
+      textura = optTexture; //textura toma como valor el nombre de la carpeta donde esta guardada cada textura. 
+      /* console.log(this.dataset.size);  Se prueba que si se esten mandando correctamente el nombre de la carpeta */
+      changeTexture(textura);
+      }
+      });
+
+      //Funcion Boton Volver
+
+      backBtn.onclick = function(){
+      tooglecontent();
+      reset();
+      }
+
+      function tooglecontent(){
+        Inicio.style.display=Inicio.style.display == 'none'? 'flex': 'none';
+      }
+  </script>
+</body>
+
+</html>
